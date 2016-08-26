@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}{% block head_title %}{% endblock head_title %}{% endblock title %}
+{% block content %}
+<body>
+<!-- List of uploaded documents -->
+{% if classes %}
+    <ul>
+    {% for class in classes %}
+        <li><a href="{{ class.class_num }}">{{ class.clas_num }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No Departments.</p>
+{% endif %}
+</body>
+{% endblock %}
