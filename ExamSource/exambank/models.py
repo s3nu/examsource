@@ -8,18 +8,11 @@ from django.db import models
 from django.utils.encoding import python_2_unicode_compatible
 from django.core.files.storage import FileSystemStorage
 
-class Department(models.Model):
-    department = models.CharField(max_length=100)
-    class_shortName = models.CharField(max_length=100)
-
-class Classes(models.Model):
-    department = models.ForeignKey(Department)
+class Bank(models.Model):
+    department = models.CharField(max_length=20)
+    class_name = models.CharField(max_length=10)
     class_num = models.IntegerField()
+    file_name = models.CharField(max_length=30, default='.pdf')
 
-class Files(models.Model):
-    classes = models.ForeignKey(Classes)
-    file_name = models.CharField(max_length=300)
-    professor_name = models.CharField(max_length=100)
-    file_year = models.IntegerField()
-    fileobj = models.FileField(verbose_name=file_name)
-
+class Document(models.Model):
+    docfile = models.FileField()

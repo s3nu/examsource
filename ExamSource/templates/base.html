@@ -21,7 +21,7 @@
     <!-- Your stuff: Third-party CSS libraries go here -->
 
     <!-- This file stores project-specific CSS -->
-    <link href="{% static 'css/base.css' %}" rel="stylesheet">
+    <link href="{% static 'css/project.css' %}" rel="stylesheet">
 
     {% endblock %}
 
@@ -48,7 +48,7 @@
                   <a class="nav-link" href="{% url 'about' %}">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="{% url 'exambank:department'  %}">Bank</a>
+                  <a class="nav-link" href="{% url 'exambank:list'  %}">Bank</a>
                 </li>
               {% else %}
                 <li class="nav-item">
@@ -91,14 +91,10 @@
       {% endif %}
 
       {% block content %}
-        <p id="base-message">Welcome</p>
+        <p>Welcome</p>
       {% endblock content %}
 
     </div> <!-- /container -->
-
-    <div class="footer">
-      <p>By Team Standy</p>
-    </div>
 
     {% block modal %}{% endblock modal %}
 
@@ -121,4 +117,3 @@
     {% endblock javascript %}
   </body>
 </html>
-

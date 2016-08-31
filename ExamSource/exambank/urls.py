@@ -1,3 +1,4 @@
+
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import, unicode_literals
 
@@ -20,9 +21,5 @@ from django.views.generic import RedirectView
 # ]
 
 urlpatterns = [
-    url(r'^dept/$', views.departmentList, name='department'),
-    #url(r'^/([0-9]{3})/$', views.classList, name='classes'),
-    url(r'^(\d+)/$', views.classList, name='classList'),
-    #url(r'^list/$', views.list, name='list'),
+    url(r'^list/$', views.list, name='list'),
 ]
-
