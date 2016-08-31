@@ -73,3 +73,5 @@ tests/.hitch
 
 venv
 .idea
+/ExamSource/static/sass/stylesheets/
+/ExamSource/static/sass/sass/
