@@ -36,3 +36,36 @@
 [hidden][style="display: block;"] {
   display: block !important;
 }
+/*//Custom Code//*/
+html,
+body {
+  height: 100%;
+  background-color: #333;
+  color: whitesmoke;
+}
+
+body {
+
+}
+
+#base-message {
+  color: white;
+}
+
+/*
+ * Footer
+ */
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
+  color: rgba(255,255,255,.5);
+}
+
+.list-group {
+  color: black;
+}
+

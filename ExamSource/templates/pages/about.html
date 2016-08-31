@@ -1,9 +1,18 @@
 {% extends "base.html" %}
 
 {% block content %}
-<p>Developed by Team Standy</p>
-<p>Admin: Slumpy</p>
-<p>Shoutout: <p>
-<p>   FreshFresh</p>
-<p>   Rowers of the Boat</p>
+  <ul class="list-group">
+    <li class="list-group-item">Developed by Team Standy</li>
+    <li class="list-group-item">Admin: Slumpy</li>
+  </ul>
+  <div class="dropdown open">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Shoutouts
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="#">Team Standy</a>
+      <a class="dropdown-item" href="#">FreshFresh</a>
+      <a class="dropdown-item" href="#">Rowers of the Boat</a>
+    </div>
+  </div>
 {% endblock %}
