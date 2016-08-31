@@ -8,5 +8,15 @@
 <h1>{% trans "Sign Up Closed" %}</h1>
 
 <p>{% trans "We are sorry, but the sign up is currently closed." %}</p>
+<p>{% trans "Registration has been Locked" %}</p>
+<p>{% trans "All account requests are declined unless:" %}</p>
+<ul class="list-group">
+  <li class="list-group-item list-group-item-danger">Special Registration Code Given</li>
+  <li class="list-group-item list-group-item-danger">Added by Admin</li>
+  <li class="list-group-item list-group-item-danger">Part of Team Standy</li>
+  <li class="list-group-item list-group-item-danger">Full Stack Developer</li>
+</ul>
+<a href="{% url 'home' %}">Check here on how to help and participate!</a>
+<p>{% trans "Team Standy. Where No Seats Are Taken"%}</p>
 {% endblock %}
 
