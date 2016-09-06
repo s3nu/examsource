@@ -1,21 +1,17 @@
 {% extends "base.html" %}
-{% block css %}
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
-  <link href="{% static 'css/about.css' %}" rel="stylesheet">
-{% endblock %}
 {% block content %}
-  <ul class="list-group">
-    <li class="list-group-item">Developed by Team Standy</li>
-    <li class="list-group-item">Admin: Slumpy</li>
-  </ul>
-  <div class="dropdown open">
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Shoutouts
-    </button>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-      <a class="dropdown-item" href="#">Team Standy</a>
-      <a class="dropdown-item" href="#">FreshFresh</a>
-      <a class="dropdown-item" href="#">Rowers of the Boat</a>
-    </div>
+<ul class="list-group">
+  <li id="about_list" class="list-group-item">Developed by Team Standy</li>
+  <li id="about_list" class="list-group-item">Admin: Slumpy</li>
+</ul>
+<div class="dropdown open">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Shoutouts
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Team Standy</a>
+    <a class="dropdown-item" href="#">FreshFresh</a>
+    <a class="dropdown-item" href="#">Rowers of the Boat</a>
   </div>
+</div>
 {% endblock %}

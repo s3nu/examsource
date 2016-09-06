@@ -47,9 +47,9 @@
                 <li class="nav-item">
                   <a class="nav-link" href="{% url 'about' %}">About</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="{% url 'exambank:department'  %}">Bank</a>
-                </li>
+{#                <li class="nav-item">#}
+{#                  <a class="nav-link" href="{% url 'courses:course_list'  %}">Bank</a>#}
+{#                </li>#}
               {% else %}
                 <li class="nav-item">
                   <a class="nav-link" href="{% url 'home' %}">Home</a>
@@ -116,6 +116,12 @@
       <!-- place project specific Javascript in this file -->
 
       <script src="{% static 'js/project.js' %}"></script>
+      <script>
+        $(document).ready(function() {
+            {% block domready %}
+            {% endblock %}
+        });
+    </script>
 
 
     {% endblock javascript %}

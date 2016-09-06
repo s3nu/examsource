@@ -46,7 +46,7 @@ LOCAL_APPS = (
     # custom users app
     'ExamSource.users.apps.UsersConfig',
     # Your stuff: custom apps go here
-    'ExamSource.exambank.apps.ExamBankConfig'
+    'ExamSource.courses.apps.CoursesConfig',
 )
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
