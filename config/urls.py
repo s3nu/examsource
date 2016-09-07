@@ -24,6 +24,7 @@ urlpatterns = [
 
     # Your stuff: custom urls includes go here
     url(r'^course/', include('ExamSource.courses.urls')),
+    #url(r'^course/', TemplateView.as_view(template_name='courses/course/list.html'), name='course'),
     #url(r'^$', include('ExamSource.courses.urls', namespace='courses')),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

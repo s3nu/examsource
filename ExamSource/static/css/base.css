@@ -90,7 +90,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    /*background:#efefef;*/
     width:100%;
     overflow:auto;
     padding:20px 0 20px 40px;
@@ -326,7 +325,8 @@ ul#course-modules li:hover {
 }
 
 .helptext {
-  color: #ccc;
-  padding-left: 20px;
+    color:#ccc;
+    padding-left:20px;
 }
+
 
